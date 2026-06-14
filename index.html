@@ -86,7 +86,7 @@
         const loadingDiv = addMessage('思考中...', 'ai');
 
         try {
-            const response = await fetch('/api/chat', {
+const response = await fetch('https://chat.vercel.app/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ messages: messages })
